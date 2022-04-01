@@ -1,5 +1,20 @@
 package chess.pieces;
 
-public class Pawn {
+import boardgame.Board;
+import chess.ChessPiece;
+import chess.Color;
+
+public class Pawn extends ChessPiece {
+
+	public Pawn(Board board, Color color, Integer moveCount) {
+		super(board, color, moveCount);
+	}
+	
+	// ----
+	
+	@Override
+	public String toString() {
+		return "P";
+	}
 
 }
